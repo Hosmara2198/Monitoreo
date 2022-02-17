@@ -190,7 +190,9 @@ class  EjecucionController extends Controller
     }
 
     public function pruebaComando(Request $request){
-        $category = Artisan::call('Cornelio:ReviewWapiad');
+        $message = urldecode('¡Hola+Compa%C3%B1eros!+Adjunto+el+TOP+10+de+temas+con+m%C3%A1s+interacciones+en+las+Redes+Sociales+al+medio+d%C3%ADa');
+        dd($message);
+        //$category = Artisan::call('Cornelio:ReviewWapiad');
         //$category = Artisan::call('Cornelio:TopReactionT');
         //$category = Artisan::call('Cornelio:TopReactionD');
         //$category = Artisan::call('Cornelio:TopAnalysisT');
